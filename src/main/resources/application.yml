@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/chatDB
+    driver-class-name: org.h2.Driver
+    username: root
+    password: secret
+    hikari:
+      auto-commit : false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        connection:
+          provider_disables_autocommit: true
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: true
+    data:
+      jpa:
+        repositories:
+          enabled: true
+    jackson:
+      serialization:
+        WRITE_DATES_AS_TIMESTAMPS: false
+server:
+  port: 8081
+#jwt_token
+jwt:
+  secret: secret

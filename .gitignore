@@ -1,0 +1,20 @@
+# ignore .classpath file
+.classpath
+
+# ignore .project file
+*.project
+
+# ignore all files in any directory named target
+target/
+
+# ignore all files in any directory named .settings
+.settings/
+
+# ignore all files in any directory named .vscode
+.vscode
+
+# ignore all files in any directory named data
+data/
+
+# ignore all files in any directory named logs
+logs/
